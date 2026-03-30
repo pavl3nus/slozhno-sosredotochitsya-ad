@@ -146,9 +146,10 @@ h2 {
   -webkit-margin-after: var(--offset-md);
 }
 
-.card {
-  margin-block-end: var(--offset-md);
-  -webkit-margin-after: var(--offset-md);
+.cards-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .card__title {
@@ -192,6 +193,10 @@ a:focus {
 
 a:focus-visible {
   outline: none;
+}
+
+.gallery__title {
+  margin-block-end: var(--offset-sm);
 }
 
 .gallery__list {
@@ -238,7 +243,7 @@ a:focus-visible {
   .header {
     grid-template-columns: 1fr 1fr;
     padding: var(--offset-md);
-    margin-block-end: calc(2 * var(--offset-md));
+    margin-block-end: calc(3 * var(--offset-md));
   }
 
   .header__paragraph {
@@ -268,7 +273,7 @@ a:focus-visible {
   }
 
   .content {
-    padding: var(--offset-md);
+    padding-inline: var(--offset-md);
   }
 
   section {
@@ -296,6 +301,11 @@ a:focus-visible {
 
   .advices__list {
     grid-column: 2;
+  }
+
+  .gallery {
+    margin-block-end: calc(3 * var(--offset-md));
+    -webkit-margin-after: calc(3 * var(--offset-md));
   }
 
   .gallery__list {
@@ -350,5 +360,15 @@ a:focus-visible {
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;
     gap: var(--offset-md);
+  }
+
+  .gallery {
+    margin-block-end: calc(var(--offset-lg) + 1px);
+    -webkit-margin-after: calc(var(--offset-lg) + 1px);
+  }
+
+  .gallery__title {
+    margin-block-end: var(--offset-md);
+    -webkit-margin-after: var(--offset-md);
   }
 }
