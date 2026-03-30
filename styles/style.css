@@ -308,6 +308,11 @@ a:focus-visible {
     -webkit-margin-after: calc(3 * var(--offset-md));
   }
 
+  .gallery__title {
+    margin-block-end: var(--offset-md);
+    -webkit-margin-after: var(--offset-md);
+  }
+
   .gallery__list {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--offset-md);
@@ -337,6 +342,10 @@ a:focus-visible {
     grid-column: 2 / 4;
     grid-row: 3;
   }
+
+  .footer__logo {
+    font-size: var(--header-title-size-desktop);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -365,10 +374,5 @@ a:focus-visible {
   .gallery {
     margin-block-end: calc(var(--offset-lg) + 1px);
     -webkit-margin-after: calc(var(--offset-lg) + 1px);
-  }
-
-  .gallery__title {
-    margin-block-end: var(--offset-md);
-    -webkit-margin-after: var(--offset-md);
   }
 }
