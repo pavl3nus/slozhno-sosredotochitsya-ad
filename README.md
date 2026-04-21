@@ -1,1 +1,1 @@
-https://github.com/pavl3nus/slozhno-sosredotochitsya-ad
+https://pavl3nus.github.io/slozhno-sosredotochitsya-ad/
